@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TemperatureConverter</string>
+    <string name="titleMainScreenText">TEMPERATURE CONVERTER</string>
+
+    <string name="FahrenheitItem">Fahrenheit</string>
+    <string name="CelsiusItem">Celsius</string>
+    <string name="KelvinItem">Kelvin</string>
+    <string name="RankinItem">Rankin</string>
+    <string name="ReaumurItem">Reaumur</string>
+    <string name="value">Value</string>
+    <string name="Result">Result</string>
+    <string name="Templates">Templates</string>
+
+    <string-array name="units">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+        <item>Kelvin</item>
+        <item>Rankin</item>
+        <item>Reaumur</item>
+    </string-array>
+</resources>
