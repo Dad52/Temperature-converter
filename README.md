@@ -11,10 +11,12 @@
 ## Как использовать?
 
 Все довольно просто, нужно лишь ввести значение в поле для ввода и выбрать величины для перевода - ИЗ каких и в какие температуры переводите
-
+<div style="display: flex; flex-direction: row">
 <img src="https://user-images.githubusercontent.com/93911341/152015017-09829013-0a07-49fd-87aa-5e326d41eddf.jpg" alt="drawing" width="200"/>
 <img src="https://user-images.githubusercontent.com/93911341/152015013-522efac2-523e-4932-befc-801216098de0.jpg" width="200"/>
 <img src="https://user-images.githubusercontent.com/93911341/152015008-dcddf4ad-cfb2-4e15-8473-fb2c65f0d613.jpg" alt="drawing" width="200"/>
+</div>
+
 
 Если системный язык - русский, то и интерфейс становится русским
 
