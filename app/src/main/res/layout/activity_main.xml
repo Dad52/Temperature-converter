@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:layout_weight="100"
     android:padding="8dp"
+    tools:context=".MainActivity"
+
     >
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-
         android:layout_marginTop="8dp"
 
         android:fontFamily="@font/open_sans_semibold"
@@ -25,26 +26,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <com.google.android.material.textfield.TextInputEditText-->
-<!--        android:id="@+id/editTextFirst"-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
-<!--        android:layout_width="216dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginTop="163dp"-->
-<!--        android:hint="Первое значение"-->
-<!--        android:textSize="18sp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+    <!--    <com.google.android.material.textfield.TextInputEditText-->
+    <!--        android:id="@+id/editTextFirst"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+    <!--        android:layout_width="216dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginTop="163dp"-->
+    <!--        android:hint="Первое значение"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editTextBoxFirst"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginStart="12dp"
-
         android:layout_marginTop="48dp"
         android:minWidth="150dp"
+        app:layout_constraintHorizontal_weight="50"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -54,11 +54,11 @@
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:digits="1234567890"
-            android:hint="@string/value"
             android:fontFamily="@font/open_sans_semibold"
+            android:hint="@string/value"
             android:inputType="numberDecimal"
-            android:textColor="@color/mainTextColor"
             android:maxLength="15"
+            android:textColor="@color/mainTextColor"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="141dp" />
@@ -69,12 +69,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-        android:layout_width="156dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:focusable="false"
         android:inputType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="50"
         app:layout_constraintStart_toEndOf="@+id/editTextBoxFirst"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -92,19 +94,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-<!--################################################################################-->
+    <!--################################################################################-->
 
-<!--    <com.google.android.material.textfield.TextInputEditText-->
-<!--        android:id="@+id/editTextSecond"-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"-->
-<!--        android:layout_width="216dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginTop="48dp"-->
-<!--        android:hint="Результат "-->
-<!--        android:textSize="18sp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextFirst" -->
-<!--        />-->
+    <!--    <com.google.android.material.textfield.TextInputEditText-->
+    <!--        android:id="@+id/editTextSecond"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"-->
+    <!--        android:layout_width="216dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginTop="48dp"-->
+    <!--        android:hint="Результат "-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextFirst" -->
+    <!--        />-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editTextBoxSecond"
@@ -137,11 +139,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-        android:layout_width="156dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:inputType="none"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editTextBoxSecond"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
@@ -170,127 +173,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         app:srcCompat="@drawable/ic_baseline_swap_vert_24" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewCtoK"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        app:cardCornerRadius="12dp"
-
-        app:layout_constraintStart_toStartOf="@+id/editTextBoxSecond"
-        app:layout_constraintTop_toBottomOf="@+id/textView9">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/open_sans_semibold"
-            android:text="°C to °K"
-            android:textColor="@color/mainTextColor"
-            android:textSize="24sp" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewCtoF"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        app:cardCornerRadius="12dp"
-        app:layout_constraintStart_toEndOf="@+id/cardViewCtoK"
-        app:layout_constraintTop_toTopOf="@+id/cardViewCtoK">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="°C to °F"
-            android:fontFamily="@font/open_sans_semibold"
-            android:textColor="@color/mainTextColor"
-            android:textSize="24sp" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewCtoR"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        app:cardCornerRadius="12dp"
-        app:layout_constraintStart_toEndOf="@+id/cardViewCtoF"
-        app:layout_constraintTop_toTopOf="@+id/cardViewCtoK">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="°C to °R"
-            android:fontFamily="@font/open_sans_semibold"
-            android:textColor="@color/mainTextColor"
-            android:textSize="24sp" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewFtoK"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        app:cardCornerRadius="12dp"
-        app:layout_constraintStart_toStartOf="@+id/editTextBoxSecond"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewCtoK">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="°F to °K"
-            android:fontFamily="@font/open_sans_semibold"
-            android:textColor="@color/mainTextColor"
-            android:textSize="24sp" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewFtoC"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        app:cardCornerRadius="12dp"
-        app:layout_constraintStart_toEndOf="@+id/cardViewFtoK"
-        app:layout_constraintTop_toTopOf="@+id/cardViewFtoK">
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="°F to °C"
-            android:fontFamily="@font/open_sans_semibold"
-            android:textColor="@color/mainTextColor"
-            android:textSize="24sp" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewFtoR"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        app:cardCornerRadius="12dp"
-        app:layout_constraintStart_toEndOf="@+id/cardViewFtoC"
-        app:layout_constraintTop_toTopOf="@+id/cardViewFtoC">
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="°F to °C"
-            android:fontFamily="@font/open_sans_semibold"
-            android:textColor="@color/mainTextColor"
-            android:textSize="24sp" />
-    </androidx.cardview.widget.CardView>
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
@@ -301,5 +183,149 @@
         android:textColor="@color/mainTextColor"
         app:layout_constraintStart_toStartOf="@+id/editTextBoxSecond"
         app:layout_constraintTop_toBottomOf="@+id/editTextBoxSecond" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:weightSum="3.0"
+        app:layout_constraintDimensionRatio="h, 3:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCtoR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1.0"
+            app:cardCornerRadius="12dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="°C to °R"
+                android:textColor="@color/mainTextColor"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCtoK"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1.0"
+            app:cardCornerRadius="12dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="°C to °K"
+                android:textColor="@color/mainTextColor"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCtoF"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1.0"
+            app:cardCornerRadius="12dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="°C to °F"
+                android:textColor="@color/mainTextColor"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h, 3:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewFtoK"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1.0"
+            app:cardCornerRadius="12dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="°F to °K"
+                android:textColor="@color/mainTextColor"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewFtoC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1.0"
+            app:cardCornerRadius="12dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="°F to °C"
+                android:textColor="@color/mainTextColor"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewFtoR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1.0"
+            app:cardCornerRadius="12dp"
+            app:layout_optimizationLevel="ratio">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="°F to °C"
+                android:textColor="@color/mainTextColor"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
