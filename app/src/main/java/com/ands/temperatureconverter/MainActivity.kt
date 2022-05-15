@@ -7,6 +7,8 @@ import android.widget.ArrayAdapter
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.ands.temperatureconverter.databinding.ActivityMainBinding
+import com.ands.temperatureconverter.helpers.SimpleTextWatcher
+import com.ands.temperatureconverter.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

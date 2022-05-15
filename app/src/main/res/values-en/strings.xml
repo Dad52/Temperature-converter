@@ -11,6 +11,12 @@
     <string name="Result">Result</string>
     <string name="Templates">Templates</string>
 
+    <string name="FahrenheitSign">%1$s °F</string>
+    <string name="CelsiusSign">%1$s °C</string>
+    <string name="KelvinSign">%1$s °K</string>
+    <string name="RankineSign">%1$s °R</string>
+    <string name="ReaumurSign">%1$s °Re</string>
+
     <string-array name="units">
         <item>Fahrenheit</item>
         <item>Celsius</item>

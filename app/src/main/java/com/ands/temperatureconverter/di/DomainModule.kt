@@ -1,7 +1,8 @@
 package com.ands.temperatureconverter.di
 
 import android.content.Context
-import com.ands.temperatureconverter.FormatTemperatureUseCase
+import com.ands.temperatureconverter.usecases.ConvertTemperaturesUseCase
+import com.ands.temperatureconverter.usecases.FormatTemperatureUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,4 +21,8 @@ class DomainModule {
         return FormatTemperatureUseCase(context = context)
     }
 
+    @Provides
+    fun provideConvertTemperaturesUseCase(@ApplicationContext context: Context) : ConvertTemperaturesUseCase {
+        return ConvertTemperaturesUseCase(context = context)
+    }
 }

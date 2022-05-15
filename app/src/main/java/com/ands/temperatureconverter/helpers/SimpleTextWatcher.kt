@@ -1,4 +1,4 @@
-package com.ands.temperatureconverter
+package com.ands.temperatureconverter.helpers
 
 import android.text.Editable
 import android.text.TextWatcher

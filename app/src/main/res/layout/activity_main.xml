@@ -167,6 +167,8 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:focusable="false"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout"
@@ -322,7 +324,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/open_sans_semibold"
-                android:text="°F to °C"
+                android:text="°F to °R"
                 android:textColor="@color/mainTextColor"
                 android:textSize="24sp" />
         </androidx.cardview.widget.CardView>
