@@ -5,7 +5,7 @@
     <string name="FahrenheitItem">Fahrenheit</string>
     <string name="CelsiusItem">Celsius</string>
     <string name="KelvinItem">Kelvin</string>
-    <string name="RankinItem">Rankin</string>
+    <string name="RankineItem">Rankin</string>
     <string name="ReaumurItem">Reaumur</string>
     <string name="value">Value</string>
     <string name="Result">Result</string>

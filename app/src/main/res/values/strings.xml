@@ -5,7 +5,7 @@
     <string name="FahrenheitItem">Фаренгейт</string>
     <string name="CelsiusItem">Цельсий</string>
     <string name="KelvinItem">Кельвин</string>
-    <string name="RankinItem">Рэнкин</string>
+    <string name="RankineItem">Рэнкин</string>
     <string name="ReaumurItem">Реомюр</string>
     <string name="value">Значение</string>
     <string name="Result">Результат</string>
